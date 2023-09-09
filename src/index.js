@@ -32,7 +32,18 @@ const Image = () => (
     alt="Best seller"
   />
 )
-const Title = () => <h2>The PAct</h2>
-const Author = () => <h2>Author Name</h2>
+const Title = () => {
+  const inlineStyle = {
+    color: 'red',
+    fontSize: '2rem',
+    marginTop: '1rem',
+  }
+  return <h2 style={inlineStyle}>The PAct</h2>
+}
+const Author = () => (
+  <h2 style={{ color: 'blue', fontSize: '1rem', marginTop: '1rem' }}>
+    Author Name
+  </h2>
+)
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<Booklist />)
