@@ -11,17 +11,21 @@ const img =
 const Booklist = () => {
   return (
     <section className="booklist">
-      <Book title={title} author={author} img={img} />
+      <Book title={title} author={author} img={img}>
+        <p>Test Children props</p>
+        <button>Click ME</button>
+      </Book>
       <Book title={title} author={author} img={img} />
     </section>
   )
 }
 
-const Book = ({ title, author, img }) => {
+const Book = ({ title, author, img, children }) => {
   return (
     <article className="book">
       <img src={img} alt="Best seller" />
       <h2>{title}</h2>
+      {children}
       <h2>{author}</h2>
     </article>
   )
