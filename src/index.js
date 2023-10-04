@@ -28,6 +28,32 @@ const Booklist = () => {
           </Book>
         )
       })}
+      <ExampleEvent />
+    </section>
+  )
+}
+
+const ExampleEvent = () => {
+  const handleEventClick = (e) => {
+    e.preventDefault()
+    debugger
+    alert('Click it')
+  }
+
+  return (
+    <section>
+      <form>
+        <h2>sample form</h2>
+        <input
+          type="text"
+          name=""
+          id=""
+          onChange={(e) => console.log(e.target.value)}
+        />
+        <button type="submit" onClick={handleEventClick}>
+          Submit
+        </button>
+      </form>
     </section>
   )
 }
