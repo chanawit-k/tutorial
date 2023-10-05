@@ -1,0 +1,7 @@
+- initail React Project
+- element + components
+- props
+  - children
+  - use '...' for copy element
+- event(onClick, onChange, onSubmit)
+  - how to call function in child components
