@@ -6,3 +6,5 @@
 - event(onClick, onChange, onSubmit)
   - how to call function in child components
 - seperate file js
+- how to deploy in Prod
+  - using ``"npm run build"` for create build folder
