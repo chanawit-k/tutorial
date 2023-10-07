@@ -5,3 +5,4 @@
   - use '...' for copy element
 - event(onClick, onChange, onSubmit)
   - how to call function in child components
+- seperate file js
